@@ -14,8 +14,8 @@ jobs:
       - name: Update timestamp
         run: |
           echo "Automated streak update: $(date -u)" >> streak.txt
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "Mohammad Zohaib"
+          git config --global user.email "zohaib.tm2@gmail.com"
           git add streak.txt
           git commit -m "chore: automated daily streak update"
           git push
