@@ -13,6 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Update timestamp
         run: |
+          git checkout "${GITHUB_REF#refs/heads/}"
           echo "Automated streak update: $(date -u)" >> streak.txt
           git config --global user.name "Mohammad Zohaib"
           git config --global user.email "zohaib.tm2@gmail.com"
